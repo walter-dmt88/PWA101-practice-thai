@@ -3,7 +3,7 @@ const { strictEqual } = require('assert');
 
 (async () => {
     const browser = await chromium.launch();
-    const page = await browser.newPage(); // Thêm await
+    const page = await browser.newPage();
     await page.goto('http://e-commerce-dev.betterbytesvn.com/');
 
     const actPageTitle = await page.title();
